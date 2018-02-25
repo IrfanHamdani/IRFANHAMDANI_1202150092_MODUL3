@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.rfanhamdani_1202150092_modul3.menuLogin">
+
+    <ImageView
+        android:id="@+id/imageViewlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/aquasplashicon" />
+
+    <TextView
+        android:id="@+id/textviewusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="165dp"
+        android:text="Username"
+        android:textSize="20dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/textviewpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="215dp"
+        android:text="Password"
+        android:textSize="20dp"
+        android:layout_marginLeft="15dp"/>
+
+    <EditText
+        android:id="@+id/editTextusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textviewusername"
+        android:layout_alignBottom="@+id/textviewusername"
+        android:layout_alignLeft="@+id/editTextpassword"
+        android:layout_alignStart="@+id/editTextpassword"
+        android:ems="10"
+        android:hint="username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textviewpassword"
+        android:layout_alignBottom="@+id/textviewpassword"
+        android:layout_alignLeft="@+id/buttonlogin"
+        android:layout_alignStart="@+id/buttonlogin"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/buttonlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Login" />
+
+</RelativeLayout>
